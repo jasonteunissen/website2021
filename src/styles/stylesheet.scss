@@ -1,0 +1,155 @@
+
+/// variables
+
+
+$white: #fff;
+
+
+*{
+  transition: 0.3s ease-in;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  background: radial-gradient(100% 100% at 50% 0%, #142430 0%, #050608 100%);
+  height: 100vh;
+
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h1, h2, h3{
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+
+  background: -webkit-linear-gradient(#DDB763, #83682C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+
+h1{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 100px;
+  text-transform: uppercase;
+  //background-color: red;
+  display: inline;
+  margin-right: -100px;
+  padding-right: 15px;
+  
+}
+
+h2{
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 52px;
+margin-right: -50px;
+text-transform: uppercase;
+
+opacity: 0.75;
+padding-right: 15px;
+margin-top: 32px;
+
+}
+
+h3{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  opacity: 0.75;
+  padding-left: 15px;  
+}
+
+a{
+  color: rgba($white, 0.5);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover{
+    color: rgba($white, 1);
+    transform: translateX( -10px);
+  }
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  //background-color: red;
+  height: 100%;
+  right: 0;
+  padding-right: 32px;
+}
+
+
+.main-wrap{
+  //background-color: red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  .title-wrap{
+    display: flex;
+    padding: 30 0px;
+    .left, .right{
+      flex-grow: 1;
+      //flex-shrink: 0;
+      width: 50%;
+
+      //margin: 30px;
+
+     // padding-right: 15px;
+      //background-color: blue;
+      text-align: right;
+    }
+    .right{
+      //background-color: green;
+      padding-left: 15px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .line{
+    //background-color: blue;
+    height: 20px;
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+    &:after{
+      content: '';
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      left: 50%;
+      background-color: $white;
+      opacity: .2;
+
+    }
+  }
+}
+
+
