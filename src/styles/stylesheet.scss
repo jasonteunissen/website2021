@@ -9,9 +9,7 @@ $white: #fff;
 $title-text-gap: 20px;
 
 
-a{
-  transition: 0.3s ease-in;
-}
+
 
 
 body{
@@ -94,6 +92,7 @@ a{
   text-decoration: none;
   position: relative;
   padding-right: 60px;
+  transition: 0.3s ease-in;
 
   &:hover{
     color: rgba($white, 1);
@@ -158,6 +157,7 @@ a::after {
   .title-wrap{
     display: flex;
     padding: 30px 0px;
+    flex-wrap: wrap;
     //background-color: red;
     .left, .right{
       flex-grow: 1;
@@ -170,7 +170,11 @@ a::after {
       //background-color: blue;
       text-align: right;
     }
+    .left{
+      min-width: 600px;
+    }
     .right{
+      min-width: 300px;
       //background-color: green;
       //padding-left: 15px;
       text-align: left;
