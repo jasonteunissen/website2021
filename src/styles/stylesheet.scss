@@ -282,6 +282,8 @@ a::after {
     text-align: center;
     padding-left: 0;
     margin-top: 100px;
+    color: #83682C;
+    text-shadow: none;
   }
 
 
@@ -303,8 +305,9 @@ a::after {
       flex-direction: column;
       align-items: center;
       padding: 80px 0;
+      justify-content: space-between;
       .left{
-        min-width: 100% !important;
+        min-width: auto ;
         //background-color: red;
         display: flex;
         flex-direction: column;
@@ -312,7 +315,7 @@ a::after {
       }
     
       .right{
-        min-width: 100% !important;
+        min-width: 100% ;
         //background-color: red;
         display: flex;
         flex-direction: row;
