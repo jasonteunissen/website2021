@@ -18,11 +18,13 @@ export default function Home() {
       <div className="line"></div>
 
       <div className="nav nav-right">
-        <a href="htpp://myexternalurl.com">Linkedin</a>
-        <a href="htpp://myexternalurl.com">Dribbble</a>
-        <a href="htpp://myexternalurl.com">Medium</a>
-        <a href="htpp://myexternalurl.com">Podcast</a>
+        <a href="https://www.linkedin.com/in/jason-teunissen-537a9327">Linkedin</a>
+        <a href="https://dribbble.com/jasonteunissen">Dribbble</a>
+        <a href="https://medium.com/@jasonteunissen">Medium</a>
+        <a href="https://anchor.fm/jason-teunissen">Podcast</a>
       </div>
+
+      <div className="noise"></div>
     </div>
   );
 }
